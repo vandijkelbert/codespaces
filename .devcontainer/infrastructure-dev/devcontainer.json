@@ -37,7 +37,8 @@
 			"extensions": [
 				"ms-dotnettools.csharp",
 				"ms-mssql.mssql",
-				"ms-dotnettools.blazorwasm-companion"
+				"ms-dotnettools.blazorwasm-companion",
+				"hashicorp.terraform"
 			]
 		}
 	},
@@ -47,6 +48,8 @@
 	"onCreateCommand": "bash .devcontainer/on-create.sh ${containerWorkspaceFolder} > on-create.log 2>&1",
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/devcontainers/features/sshd:1": {}
+		"ghcr.io/devcontainers/features/sshd:1": {},
+		"ghcr.io/devcontainers/features/azure-cli:1": {},
+		"ghcr.io/devcontainers/features/terraform:1": {}
 	}
 }
